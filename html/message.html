@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin | Dansu Group</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+  <!--navbar section-->
+  <nav
+  class="navbar sticky-top navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body"
+  data-bs-theme="dark"
+>
+  <div class="container-fluid ">
+    <a class="navbar-brand text-warning" href="#"> Densu Group </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html"
+            >Dashboard</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./index.html">Customer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="order.html">Orders(69)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_parent" href="message.html">Messaging</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Administration
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="index.html">Accounting</a></li>
+            <li><a class="dropdown-item" href="index.html">Customer Groups</a></li>
+            <li><a class="dropdown-item" href="index.html">Database</a></li>
+            <li><a class="dropdown-item" href="./Administration/email.html">Email</a></li>
+            <li><a class="dropdown-item" href="./Administration/inventory.html">Inventory</a></li>
+            <li>
+              <a class="dropdown-item" href="#">Microsoft Authorisation</a>
+            </li>
+            <li><a class="dropdown-item" href="./Administration/staff.html">Staff</a></li>
+            <li><a class="dropdown-item" href="index.html">Suppliers</a></li>
+            <li><a class="dropdown-item" href="./Administration/timesheet.html">Timesheets</a></li>
+            <li>
+              <a class="dropdown-item" href="./Administration/web-content.html">Web - Content Manager</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="./Administration/web-organisation.html"
+                >Web - Organisation Manager</a
+              >
+            </li>
+            <li><a class="dropdown-item" href="./Administration/web-promo.html">Web - Promo Codes</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex me-2" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </form>
+      <div class="dropdown me-4">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Alex Meyers
+        </a>
+
+        <ul class="dropdown-menu text-center me-auto">
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <!--message create-->
+    
+    <div class="container">
+      <h1 class="mt-3">Messaging (0) |
+        <button type="submit" class="btn btn-primary">+</button>
+      </h1>
+      
+      <div class="row mt-5">
+        <div class="col-2 mt-2">
+          <a href="#">Inbox (0)<span style="font-size: 12px"> - My Account</span></a> 
+          <a href="#">Sent(0)<span style="font-size: 12px"> - My Account</span></a> 
+          <a href="#">Deleted<span style="font-size: 12px"> - My Account</span></a> 
+        </div>
+
+        <div class="col-sm-10" style="overflow-x: hidden; overflow-y: auto">
+          <div>
+            <table style="width: 100%">
+              <tbody>
+                <tr>
+                  <th style="width: 60px">From:</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="from"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th>To:</th>
+                  <td>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>select the recipient/s</option>                    
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th style="width: 60px">Subject:&nbsp</th>
+                  <td>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="subject"
+                      aria-label="subject"
+                      aria-describedby="basic-addon1"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <br />
+            Body:
+            <textarea
+              type="text"
+              rows="2"
+              cols="30"
+              class="form-control"
+              placeholder="Body"
+              style="height: 260px"
+            ></textarea>
+            <button class="bg-success w-100 border-0">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
